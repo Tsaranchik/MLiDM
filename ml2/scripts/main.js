@@ -7,7 +7,8 @@ function getData(forms) {
 }
 
 /**
- * Валдация параметров ввода
+ * Валдация параметров ввода элементов массива
+ * @param element
  */
 function validateElement(element) {
     for (let i = 0; i < element.length; i++) {
@@ -24,6 +25,11 @@ function validateElement(element) {
     return element;
 }
 
+/**
+ * Валдация параметров ввода элементов отношения
+ * @param validetion
+ * @param element
+ */
 function validateRelation(validetion, element) {
     let check = 0;
     for (let i = 0; i < validetion.length; i++) {
@@ -41,6 +47,11 @@ function validateRelation(validetion, element) {
     }
 }
 
+/**
+ * Функция, проверяющая является ли отношение рефлексивным
+ * @param element
+ * @param relation
+ */
 function reflect(element, relation) {
     let ref = 0;
     for (let i = 0; i < element.length; i++) {
@@ -58,6 +69,10 @@ function reflect(element, relation) {
     return 'Нет';
 }
 
+/**
+ * Функция, проверяющая является ли отношение симметричным
+ * @param relation
+ */
 function symmetry(relation) {
     let sym = 0;
     for (let i = 0; i < relation.length; i++) {
@@ -76,6 +91,11 @@ function symmetry(relation) {
     return 'Нет';
 }
 
+
+/**
+ * Функция, проверяющая является ли отношение кососимметричным
+ * @param relation
+ */
 function skewSymmetry(relation) {
     let ske = 0;
     for (let i = 0; i < relation.length; i++) {
@@ -94,6 +114,11 @@ function skewSymmetry(relation) {
     return 'Нет';
 }
 
+
+/**
+ * Функция, проверяющая является ли отношение транзитивным
+ * @param relation
+ */
 function transitivity(relation) {
     let tra = 0;
     for (let i = 0; i < relation.length; i++) {
