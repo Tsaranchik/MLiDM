@@ -7,7 +7,7 @@ function getData(forms) {
 }
 
 /**
- * Валдация параметров ввода элементов массива
+ * Валдация параметров ввода элементов множества
  * @param element
  */
 function validateElement(element) {
@@ -102,7 +102,7 @@ function skewSymmetry(relation) {
         mas1 = relation[i].split('-');
         for (let j = 0; j < relation.length; j++) {
             mas2 = relation[j].split('-');
-            if (mas1[0] === mas2[1] && mas1[1] == mas2[0] && mas1[1] == mas1[0]) {
+            if (mas1[0] == mas2[1] && mas1[1] == mas2[0] && mas1[1] == mas1[0]) {
                 ske++;
                 j = relation.length;
             }
