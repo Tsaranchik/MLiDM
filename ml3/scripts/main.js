@@ -1,11 +1,3 @@
-// /**
-//  * Валидация параметров ввода
-//  * @param masOfMas
-//  */
-// function validateElement(mas) {
-//     return;
-// }
-
 /**
  * Проверка, являются ли отношения функцией
  * @param masOfMas
